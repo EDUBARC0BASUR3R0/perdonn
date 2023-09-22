@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Estilos adicionales para hacerlo más atractivo */
+        /* Estilos para la flor amarilla */
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
@@ -24,6 +24,7 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
             text-align: center;
             padding: 20px;
+            cursor: pointer; /* Hace que el cursor cambie al pasar sobre la flor */
         }
 
         .text-above {
@@ -35,7 +36,7 @@
         .mid {
             width: 100px;
             height: 100px;
-            background-color: #f0f0f0;
+            background-color: yellow; /* Color amarillo */
             border-radius: 50%;
             margin: 20px auto;
         }
@@ -43,7 +44,7 @@
         .Petal1, .Petal2, .Petal3 {
             width: 80px;
             height: 150px;
-            background-color: #f8d2d2;
+            background-color: yellow; /* Color amarillo */
             position: absolute;
             border-radius: 50%;
         }
@@ -65,7 +66,7 @@
     <title>Flower</title>
 </head>
 <body>
-    <div class="flower">
+    <div class="flower" id="flower">
         <div class="text-above">De Eduardo</div>
         <div class="mid"></div>
         <div class="Petal1 p1"></div>
@@ -82,6 +83,15 @@
         <div class="Petal3 p4"></div>
         <div class="text-below">Para Celeste. </div>
     </div>
+    
+    <script>
+        // Agregar interactividad para mostrar un mensaje al hacer clic en la flor
+        const flower = document.getElementById('flower');
+        flower.addEventListener('click', () => {
+            alert('¡Hola, Celeste! Esta flor es para ti.');
+        });
+    </script>
 </body>
 </html>
+
 
