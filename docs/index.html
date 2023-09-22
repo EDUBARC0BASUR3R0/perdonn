@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos adicionales para hacerlo más atractivo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .flower {
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .text-above {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .mid {
+            width: 100px;
+            height: 100px;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+
+        .Petal1, .Petal2, .Petal3 {
+            width: 80px;
+            height: 150px;
+            background-color: #f8d2d2;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .Petal1 { transform: rotate(45deg); }
+        .Petal2 { transform: rotate(90deg); }
+        .Petal3 { transform: rotate(135deg); }
+
+        .p1 { top: -50px; left: 80px; }
+        .p2 { top: 80px; left: -50px; }
+        .p3 { bottom: -50px; left: 80px; }
+        .p4 { top: 80px; right: -50px; }
+
+        .text-below {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+    <title>Flower</title>
+</head>
+<body>
+    <div class="flower">
+        <div class="text-above">De Eduardo</div>
+        <div class="mid"></div>
+        <div class="Petal1 p1"></div>
+        <div class="Petal1 p2"></div>
+        <div class="Petal1 p3"></div>
+        <div class="Petal1 p4"></div>
+        <div class="Petal2 p1"></div>
+        <div class="Petal2 p2"></div>
+        <div class="Petal2 p3"></div>
+        <div class="Petal2 p4"></div>
+        <div class="Petal3 p1"></div>
+        <div class="Petal3 p2"></div>
+        <div class="Petal3 p3"></div>
+        <div class="Petal3 p4"></div>
+        <div class="text-below">Para Celeste. </div>
+    </div>
+</body>
+</html>
+
