@@ -57,25 +57,52 @@
 </head>
 <body>
   <div class="flower" id="flower">
-    <div class="text-above">Perdón, mi amor</div>
+    <div class="text-above">Hola Paola,</div>
+    <div class="text-above">Perdóname, mi amor.</div>
+    <div class="text-above">¿Me perdonas?</div>
     <div class="text-below">Respuesta: [Sí / No]</div>
   </div>
 
   <script>
     const flower = document.getElementById('flower');
+    const mensajesNo = [
+      "Te amo, Paola.",
+      "Celeste, te amo.",
+      "Te amo a pesar de todo.",
+      "Amo verte sonreír.",
+      "Recuerdo la primera vez que te vi.",
+      "Todavía recuerdo esa blusa roja.",
+      "Extraño tus besos.",
+      "Extraño que me muerdas.",
+      "Extraño tu cabello.",
+      "Extraño tus mensajes.",
+      "Tu amor significa todo para mí.",
+      "No quiero perderte.",
+      "Deseo que todo vuelva a la normalidad.",
+      "Espero poder arreglar las cosas entre nosotros.",
+      "Sé que puedo ser mejor para ti.",
+      "Eres lo mejor que me ha pasado.",
+      "Sé que puedo hacerlo mejor contigo.",
+      "Creo en nuestro amor.",
+      "Estoy aquí para ti siempre.",
+      "Voy a cambiar, te lo prometo."
+    ];
+
+    let mensajeIndex = 0;
+
     flower.addEventListener('click', () => {
-      let respuesta = false;
-      while (!respuesta) {
-        respuesta = confirm('¿Me perdonas, mi amor?');
-        if (!respuesta) {
-          confirm('¿Seguro que no me perdonas?');
-        }
+      const respuesta = confirm('¿Me perdonas, mi amor?');
+      if (respuesta) {
+        alert('¡Eres tan linda, incluso cuando estás enojada, mi amor! Te amo mucho ❤');
+      } else {
+        alert(mensajesNo[mensajeIndex]);
+        mensajeIndex = (mensajeIndex + 1) % mensajesNo.length;
       }
-      alert('Te amo mucho y te amé desde que te vi en el instituto con esa blusa roja de manga larga ❤');
     });
   </script>
 </body>
 </html>
+
 
 
 
