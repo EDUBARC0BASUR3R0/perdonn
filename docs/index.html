@@ -88,23 +88,49 @@
       "Voy a cambiar, te lo prometo."
     ];
 
+    const mensajesSi = [
+      "Eres tan linda, incluso cuando estás enojada, mi amor. Te amo mucho ❤",
+      "Gracias por perdonarme, mi amor. Te amo más de lo que puedes imaginar ❤",
+      "Mi vida es mucho mejor contigo, te amo mucho ❤",
+      "Prometo hacer todo lo posible para no cometer el mismo error. Te amo ❤",
+      "Juntos superaremos cualquier obstáculo. Te amo con todo mi corazón ❤",
+      "Eres la luz de mi vida, gracias por estar siempre ahí para mí ❤",
+      "Te admiro más de lo que puedes saber. Te amo mucho, Paola ❤",
+      "Cada momento contigo es especial. Te amo tanto ❤",
+      "Nuestro amor es lo más importante para mí. Te amo, Celeste ❤",
+      "Eres mi todo, te amo desde el fondo de mi corazón ❤",
+      "Eres mi felicidad, no puedo imaginarme sin ti. Te amo tanto ❤",
+      "Tu perdón significa el mundo para mí. Te amo, mi amor ❤",
+      "Gracias por darme una segunda oportunidad. Te amo con todo mi ser ❤",
+      "No hay palabras para expresar cuánto te amo. Te amo más de lo que puedo decir ❤",
+      "Siempre estaré agradecido por tenerte en mi vida. Te amo infinitamente ❤",
+      "Eres mi sol en los días oscuros. Te amo mucho, Paola ❤",
+      "No puedo imaginar un futuro sin ti. Te amo más de lo que puedo expresar ❤",
+      "Eres mi razón para seguir adelante. Te amo con todo mi corazón ❤",
+      "Juntos podemos superar cualquier desafío. Te amo, Celeste ❤",
+      "Tu amor es mi mayor bendición. Te amo más de lo que puedes entender ❤"
+    ];
+
     let mensajeIndexNo = 0;
+    let mensajeIndexSi = 0;
 
     flower.addEventListener('click', () => {
+      pedirPerdon();
+    });
+
+    function pedirPerdon() {
       const respuesta = confirm('¿Me perdonas, mi amor?');
       if (respuesta) {
-        alert('Eres tan linda enojada, mi amor. Te amo');
+        alert(mensajesSi[mensajeIndexSi]);
       } else {
         alert(mensajesNo[mensajeIndexNo]);
         mensajeIndexNo = (mensajeIndexNo + 1) % mensajesNo.length;
+        pedirPerdon(); // Llamada recursiva para seguir preguntando
       }
-    });
+    }
   </script>
 </body>
 </html>
-
-
-
 
 
 
