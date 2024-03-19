@@ -120,7 +120,17 @@
 
     function pedirPerdon() {
       const respuesta = confirm('¿Me perdonas, mi amor?');
-      if (respuesta ===
+      if (respuesta) {
+        alert(mensajesSi[mensajeIndexSi]);
+      } else {
+        alert(mensajesNo[mensajeIndexNo]);
+        mensajeIndexNo = (mensajeIndexNo + 1) % mensajesNo.length;
+        pedirPerdon(); // Llamada recursiva para seguir preguntando
+      }
+    }
+  </script>
+</body>
+</html>
 
 
 
