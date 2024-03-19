@@ -57,35 +57,26 @@
 </head>
 <body>
   <div class="flower" id="flower">
-    <div class="text-above">Hola Paola,</div>
-    <div class="text-above">Quiero pedirte perdón por tener trabajo extra.</div>
-    <div class="text-above">¿Me perdonas, mi amor?</div>
+    <div class="text-above">Perdón, mi amor</div>
     <div class="text-below">Respuesta: [Sí / No]</div>
   </div>
 
   <script>
     const flower = document.getElementById('flower');
     flower.addEventListener('click', () => {
-      const respuesta = confirm('¿Me perdonas, mi amor?');
-      if (respuesta) {
-        alert('¡Gracias! Te amo mucho ❤');
-      } else {
-        const respuestaNo = confirm('¿Seguro que no me perdonas?');
-        if (respuestaNo) {
-          const respuestaFinal = confirm('¿Me perdonas, mi amor?');
-          if (respuestaFinal) {
-            alert('¡Gracias! Te amo mucho ❤');
-          } else {
-            alert('Lo siento, ¿podemos intentarlo de nuevo?');
-          }
-        } else {
-          alert('Lo siento, ¿podemos intentarlo de nuevo?');
+      let respuesta = false;
+      while (!respuesta) {
+        respuesta = confirm('¿Me perdonas, mi amor?');
+        if (!respuesta) {
+          confirm('¿Seguro que no me perdonas?');
         }
       }
+      alert('Te amo mucho y te amé desde que te vi en el instituto con esa blusa roja de manga larga ❤');
     });
   </script>
 </body>
 </html>
+
 
 
 
