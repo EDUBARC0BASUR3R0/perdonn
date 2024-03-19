@@ -88,20 +88,21 @@
       "Voy a cambiar, te lo prometo."
     ];
 
-    let mensajeIndex = 0;
+    let mensajeIndexNo = 0;
 
     flower.addEventListener('click', () => {
       const respuesta = confirm('¿Me perdonas, mi amor?');
       if (respuesta) {
-        alert('¡Eres tan linda, incluso cuando estás enojada, mi amor! Te amo mucho ❤');
+        alert('Eres tan linda enojada, mi amor. Te amo');
       } else {
-        alert(mensajesNo[mensajeIndex]);
-        mensajeIndex = (mensajeIndex + 1) % mensajesNo.length;
+        alert(mensajesNo[mensajeIndexNo]);
+        mensajeIndexNo = (mensajeIndexNo + 1) % mensajesNo.length;
       }
     });
   </script>
 </body>
 </html>
+
 
 
 
