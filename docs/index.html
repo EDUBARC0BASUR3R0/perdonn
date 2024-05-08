@@ -57,58 +57,38 @@
 </head>
 <body>
   <div class="flower" id="flower">
-    <div class="text-above">Hola Paola,</div>
-    <div class="text-above">Perdóname, mi amor.</div>
-    <div class="text-above">¿Me perdonas?</div>
+    <div class="text-above">Hola Marina,</div>
+    <div class="text-above">Perdón por todo.</div>
+    <div class="text-above">¿Puedes perdonarme?</div>
     <div class="text-below">Respuesta: [Sí / No]</div>
   </div>
 
   <script>
     const flower = document.getElementById('flower');
     const mensajesNo = [
-      "Te amo, Paola.",
-      "Celeste, te amo.",
-      "Te amo a pesar de todo.",
-      "Amo verte sonreír.",
-      "Recuerdo la primera vez que te vi.",
-      "Todavía recuerdo esa blusa roja.",
-      "Extraño tus besos.",
-      "Extraño que me muerdas.",
-      "Extraño tu cabello.",
-      "Extraño tus mensajes.",
-      "Tu amor significa todo para mí.",
-      "No quiero perderte.",
-      "Deseo que todo vuelva a la normalidad.",
-      "Espero poder arreglar las cosas entre nosotros.",
-      "Sé que puedo ser mejor para ti.",
-      "Eres lo mejor que me ha pasado.",
-      "Sé que puedo hacerlo mejor contigo.",
-      "Creo en nuestro amor.",
-      "Estoy aquí para ti siempre.",
-      "Voy a cambiar, te lo prometo."
+      "Marina, lamento mucho lo sucedido.",
+      "Perdón, Marina, quisiera enmendar las cosas.",
+      "Lamento mis errores, espero que podamos superar esto.",
+      "Perdóname por lo que hice, quiero corregirlo.",
+      "Espero que podamos pasar la página, Marina.",
+      "Quisiera arreglar esto, ¿me das la oportunidad?",
+      "Deseo hacer las cosas bien, ¿podemos hablar de ello?",
+      "Sinceramente no quiero perder tu confianza, perdóname.",
+      "Nuestra amistad es importante, quiero recuperarla.",
+      "Perdóname, quiero mejorar y tratarte mejor, Marina.",
     ];
 
     const mensajesSi = [
-      "Eres tan linda, incluso cuando estás enojada, mi amor. Te amo mucho ❤",
-      "Gracias por perdonarme, mi amor. Te amo más de lo que puedes imaginar ❤",
-      "Mi vida es mucho mejor contigo, te amo mucho ❤",
-      "Prometo hacer todo lo posible para no cometer el mismo error. Te amo ❤",
-      "Juntos superaremos cualquier obstáculo. Te amo con todo mi corazón ❤",
-      "Eres la luz de mi vida, gracias por estar siempre ahí para mí ❤",
-      "Te admiro más de lo que puedes saber. Te amo mucho, Paola ❤",
-      "Cada momento contigo es especial. Te amo tanto ❤",
-      "Nuestro amor es lo más importante para mí. Te amo, Celeste ❤",
-      "Eres mi todo, te amo desde el fondo de mi corazón ❤",
-      "Eres mi felicidad, no puedo imaginarme sin ti. Te amo tanto ❤",
-      "Tu perdón significa el mundo para mí. Te amo, mi amor ❤",
-      "Gracias por darme una segunda oportunidad. Te amo con todo mi ser ❤",
-      "No hay palabras para expresar cuánto te amo. Te amo más de lo que puedo decir ❤",
-      "Siempre estaré agradecido por tenerte en mi vida. Te amo infinitamente ❤",
-      "Eres mi sol en los días oscuros. Te amo mucho, Paola ❤",
-      "No puedo imaginar un futuro sin ti. Te amo más de lo que puedo expresar ❤",
-      "Eres mi razón para seguir adelante. Te amo con todo mi corazón ❤",
-      "Juntos podemos superar cualquier desafío. Te amo, Celeste ❤",
-      "Tu amor es mi mayor bendición. Te amo más de lo que puedes entender ❤"
+      "Gracias por tu comprensión, Marina, valoro mucho tu perdón.",
+      "Tu comprensión significa mucho, gracias por estar aquí.",
+      "Me alegra que podamos seguir adelante juntos, gracias.",
+      "Prometo aprender de mis errores, gracias por tu paciencia.",
+      "Eres una gran persona, gracias por entenderme, Marina.",
+      "Aprecio mucho tu gesto de perdonarme, gracias.",
+      "Tu apoyo en estos momentos es muy importante, gracias.",
+      "Gracias por darme otra oportunidad, no la desperdiciaré.",
+      "Tu amistad es valiosa, gracias por mantenerla.",
+      "Tu generosidad al perdonarme no se olvida, gracias, Marina.",
     ];
 
     let mensajeIndexNo = 0;
@@ -119,19 +99,17 @@
     });
 
     function pedirPerdon() {
-      const respuesta = confirm('¿Me perdonas, mi amor?');
+      const respuesta = confirm('¿Puedes perdonarme?');
       if (respuesta) {
-        alert(mensajesSi[mensajeIndexSi]);
-      } else {
-        alert(mensajesNo[mensajeIndexNo]);
-        mensajeIndexNo = (mensajeIndexNo + 1) % mensajesNo.length;
-        pedirPerdon(); // Llamada recursiva para seguir preguntando
-      }
-    }
-  </script>
+        alert(mensajesSi[mensaje
+        IndexSi]);
+mensajeIndexSi = (mensajeIndexSi + 1) % mensajesSi.length;
+} else {
+alert(mensajesNo[mensajeIndexNo]);
+mensajeIndexNo = (mensajeIndexNo + 1) % mensajesNo.length;
+pedirPerdon(); // Llamada recursiva para seguir preguntando
+}
+}
 </body>
 </html>
-
-
-
-
+```
